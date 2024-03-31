@@ -1,316 +1,128 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qaiser Al-Hashmi's Portfolio</title>
-    <style>
-        body {
-            font-family: Monospace;
-            background-color: #222222; /* Changed to grey as requested */
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #000; /* Black background for the header */
-            padding: 20px 0; /* Add some padding */
-            text-align: center; /* Center the content */
-        }
-
-        .typewriter {
-            font-size: 16px;
-            color: #0c0; /* Text color */
-            overflow: hidden;
-            border-right: .15em solid orange;
-            white-space: nowrap;
-            letter-spacing: .15em;
-            animation: blink-caret .75s step-end infinite;
-            display: inline-block;
-            text-align: left;
-        }
-
-        @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: orange; }
-        }
-
-        /* Add styles for the main content area */
-        .main-content {
-            padding: 20px; /* Add padding around the content */
-            color: #0c0; /* White text color */
-            text-align: center; /* Center text */
-            
-        }
-        
-        img {
-            display: block;
-            margin: 20px auto;
-            max-width: 100%;
-            width: 23%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        
-        hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 0;
-    border-top: 1px solid #3c3c3c;
-        }
-        
-        
-        .well {
-    min-height: 20px;
-    padding: 19px;
-    margin-bottom: 20px;
-    background-color: #080808;
-    border: 1px solid #000;
-    border-radius: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
-}
-        
-element.style {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 90%;
-}
-        .progress.active .progress-bar, .progress-bar.active {
-    -webkit-animation: progress-bar-stripes 2s linear infinite;
-    -o-animation: progress-bar-stripes 2s linear infinite;
-    animation: progress-bar-stripes 2s linear infinite;
-}
-        .progress-striped .progress-bar-danger {
-    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-}
-        .progress-striped .progress-bar, .progress-bar-striped {
-    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-size: 40px 40px;
-}
-        .progress-bar-danger {
-    background-color: #f00;
-}
-        .progress-bar {
-    float: left;
-    width: 0;
-    height: 100%;
-    font-size: 12px;
-    line-height: 20px;
-    color: #fff;
-    text-align: center;
-    background-color: #f00;
-    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,0.15);
-    box-shadow: inset 0 -1px 0 rgba(0,0,0,0.15);
-    -webkit-transition: width .6s ease;
-    -o-transition: width .6s ease;
-    transition: width .6s ease;
-}
-
-        .panel-heading {
-    padding: 10px 15px;
-    border-bottom: 1px solid transparent;
-    border-top-right-radius: -1;
-    border-top-left-radius: -1;
-}
-        h3, .h3 {
-    font-size: 23px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-family: Monospace;
-    font-weight: 500;
-    line-height: 1.1;
-    color: inherit;
-}
-        
-style attribute {
-    text-align: center;
-}
-        
-        
-        .panel-primary {
-    border-color: #0f0;
-}
-        
-        .panel {
-    margin-bottom: 20px;
-    background-color: #222;
-    border: 1px solid transparent;
-    border-radius: 0;
-    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
-    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
-}
-        .progress {
-    overflow: hidden;
-    height: 20px;
-    margin-bottom: 20px;
-    background-color: #3c3c3c;
-    border-radius: 0;
-    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-}
- 
-/************************************************************** */        
-        footer {
-    text-align: center; /* Center the content */
-    padding: 20px; /* Add some padding */
-    color: #0c0; /* White text color */
-}
-
-.social-icons {
-    display: inline-block; /* Align icons in a row */
-    margin-bottom: 10px; /* Space between icons and text */
-}
-
-.social-icons svg {
-    margin: 0 5px; /* Spacing between icons */
-    fill: #0c0; /* Icon color */
-}
-
-footer p {
-    font-size: 14px; /* Adjust as needed */
-    margin: 0; /* Remove default margin */
-}
-
-        
-        
-        
-    </style>
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
 
-<header>
-    <img src="psych0.png" alt="pentester">
-    <div class="typewriter">
-        Qaiser@Al-Hashmi:~$ <span id="dynamic-text"></span>
-    </div>
-</header>
+<div class="jumbotron" style="text-align:center;">
+	<img src="Psycho.png"class="center" style="width: 26%" alt="" />
 
-<div class="main-content">
-    <!-- Your main content goes here -->
-    <h1>./Certificates</h1>
-    <hr>
-    <div class="well well-lg">
-			<div class="row tall-row">
-				<div class="container pt-3">
-    <img class="img" href="#" src="https://app.hackthebox.eu/images/icons/ic-prolabs/ic-dante-overview.svg" style="width: 15%; display: inline-block; box-shadow: none;">
-    
-    <img class="img" href="#" src="https://certifications.tcm-sec.com/wp-content/uploads/2023/11/PJWT-Logo.png" style="width: 10%; display: inline-block; box-shadow: none;">
-    
-    <img class="img" href="#" src="https://miro.medium.com/v2/resize:fit:413/1*f9CO-HTghdvMLKweeAv0Aw.png" style="width: 11%; display: inline-block; box-shadow: none;">
-    
-    <img class="img" href="#" src="https://secops.group/wp-content/uploads/2023/02/certified-network-pentester.png" style="width: 10%; display: inline-block; box-shadow: none;">
- 		</div>
+	<div id="app">
+		<h1>
+			<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+			<script src="script.js"></script>
+		</h1>
 	</div>
-		</div>   
-    
 
+</div>
 
-    
-    
-    <h1>./About</h1>
-    <hr>
-        <div class="well well-lg">
+<div class="container" style="text-align:center;">
+	<!-- about section -->
+	<div class="row"  style="text-align:center;">
+<h1>./Certificates</h1>
+		<hr>
+		
+		<div class="well well-lg">
 			<div class="row tall-row">
 				<div class="container pt-3">
-                    
-                 <p>&lt;/&gt; Penetration Tester / Red Team.</p>
-			<p>&lt;/&gt; Intersted in all cyber security fields from web exploiting, attacking &amp; deffeding Active Directory to networking attacks.</p>
-			<p>&lt;/&gt; Keen eye for spotting potential security risks and flows.</p> 
- 
-                    
-        </div>
+					<img class="img" href="#" src="https://thepestotech.com/wp-content/uploads/2023/01/ic-dante-overview.svg" style="width: 15%"></a>							   
+					<img class="img" href="#" src="https://certifications.tcm-sec.com/wp-content/uploads/2023/11/PJWT-Logo.png" style="width: 10%"></a>
+					<img class="img" href="#" src="https://miro.medium.com/v2/resize:fit:413/1*f9CO-HTghdvMLKweeAv0Aw.png"style="width: 10%"></a>
+					<img class="img" href="#" src="https://secops.group/wp-content/uploads/2023/02/certified-network-pentester.png"style="width: 10%"></a>
+		</div>
 	</div>
 		</div>
-    
-    
-    
-    <h1>./Skills</h1>
-    <hr>
-        <div class="well well-lg">
-			<div class="row tall-row">
-				<div class="container pt-3">
-                    
-                   <div class="panel panel-primary">
+		<h1>./About</h1>
+		<hr>
+		<div class="well well-lg">
+			<p>&lt;/&gt; Penetration Tester / Red Team.</p>
+			<p>&lt;/&gt; Intersted in all cyber security fields from web exploiting, attacking &amp; deffeding Active Directory to networking attacks.</p>
+			<p>&lt;/&gt; Keen eye for spotting potential security risks and flows.</p> 
+		</div>
+
+		<!-- Skills section -->
+		<h1>./Skills</h1>
+		<hr>
+		<div class="well well-lg" style="text-align:center;">
+			
+			<!-- 1st skill -->
+			<div class="panel panel-primary">
 				<h3 style=" display:inline-block;" class="panel-heading">
-					<div style="float:left; "><img src="https://i.ibb.co/rtjcP4g/icons8-active-directory-64.png" style="width: 55%; box-shadow: none; vertical-align: middle;"></div>
+					<div style="float:left; "><img src="https://i.ibb.co/rtjcP4g/icons8-active-directory-64.png" alt="" width="50" height="50"></div>
 					<div>Active Directory</div>
-					<div style="clear: left;">
-				</div></h3>
+					<div style="clear: left;"/>
+				</h3>
 				<legend>
 				</legend>
 				<div class="progress progress-striped active">
 					<div class="progress-bar  progress-bar-danger" style="width: 90%"></div>
 				</div>
-			</div> 
- 
- 
-                    
-        </div>
-	</div>
+			</div>
+
+			<!-- 2nd skill -->
+			<div class="panel panel-primary">
+				<h3 style=" display:inline-block;" class="panel-heading">
+					<div style="float:left; "><img src="https://i.ibb.co/Xbnf84R/web.png" alt="" width="50" height="50"></div>
+					<div>Web Penetration Tester</div>
+					<div style="clear: left;"/>
+				</h3>
+				<legend>
+				</legend>
+				<div class="progress progress-striped active">
+					<div class="progress-bar  progress-bar-danger" style="width: 85%"></div>
+				</div>
+			</div>
+			
+			<!-- 3rd skill -->
+			<div class="panel panel-primary">
+				<h3 style=" display:inline-block;" class="panel-heading">
+					<div style="float:left; "><img src="https://i.ibb.co/GPrRnx1/Phishing.png" alt="" width="50" height="50"></div>
+					<div>Red Teaming</div>
+					<div style="clear: left;"/>
+				</h3>
+				<legend>
+				</legend>
+				<div class="progress progress-striped active">
+					<div class="progress-bar  progress-bar-info" style="width: 70%"></div>
+				</div>
+			</div>
+
+			<!-- 4th skill -->
+			<div class="panel panel-primary">
+				<h3 style=" display:inline-block;" class="panel-heading">
+					<div style="float:left; "><img src="https://i.ibb.co/swq4RQs/mobile.png" alt="" width="50" height="50"></div>
+					<div>Network Penetration Testing</div>
+					<div style="clear: left;"/>
+				</h3>
+				<legend>
+				</legend>
+				<div class="progress progress-striped active">
+					<div class="progress-bar  progress-bar-info" style="width: 65%"></div>
+				</div>
+			</div>
+
+		
 		</div>
-    
-    
-    
-    
-    
-</div>
+		<!-- Skills section -->
+		<hr>
 
-<script>
-    const phrases = ["Pen-Tester", "Red Teamer", "Pych0 @ HTB"];
-    let currentPhrase = 0;
-    let letterCount = 0;
-    let currentText = '';
-    let isDeleting = false;
-    let dynamicText = document.getElementById("dynamic-text");
 
-    function typeEffect() {
-        const fullText = phrases[currentPhrase];
-        if (isDeleting) {
-            currentText = fullText.substring(0, letterCount - 1);
-        } else {
-            currentText = fullText.substring(0, letterCount + 1);
-        }
-        dynamicText.textContent = currentText;
-        letterCount += isDeleting ? -1 : 1;
+		<!-- Footer -->
+		<div class="row tall-row">
+			<div class="container pt-3">
+			<div class="col-md-12">
+				<a class="btn btn-link btn-floating btn-lg" href="https://www.instagram.com/_16shot"> <i class="fa fa-instagram"></i><h4></h3></a>
+				<a class="btn btn-link btn-floating btn-lg" href="https://twitter.com/_naqid/"> <i class="fa fa-twitter"></i><h4></h3></a>			
+				<a class="btn btn-link btn-floating btn-lg" href="https://www.linkedin.com/in/qaiser-alhashmi"> <i class="fa fa-linkedin"></i><h4></h3></a>
+			</div>
+			<div class="col-md-12">
+				<p>Qaiser AL Hashmi. &copy; 2024</p>
+			</div>
+		</div>
+	</div>
 
-        if (!isDeleting && currentText === fullText) {
-            setTimeout(() => { isDeleting = true; }, 1000);
-        } else if (isDeleting && currentText === '') {
-            isDeleting = false;
-            currentPhrase = (currentPhrase + 1) % phrases.length;
-            setTimeout(typeEffect, 200);
-            return;
-        }
-
-        let typingSpeed = 200 - Math.random() * 100;
-        if (isDeleting) typingSpeed /= 2;
-
-        setTimeout(typeEffect, typingSpeed);
-    }
-
-    setTimeout(typeEffect, 2000);
-</script>
 </body>
-    
-    <footer>
-        <hr>
-    <div class="social-icons">
-        <!-- Replace these SVG placeholders with actual icon SVGs -->
-        <svg width="15.44" height="18.67" viewBox="0 0 24 24"><!-- Instagram SVG --></svg>
-        <svg width="15.44" height="18.67" viewBox="0 0 24 24"><!-- Twitter SVG --></svg>
-        <svg width="15.44" height="18.67" viewBox="0 0 24 24"><!-- LinkedIn SVG --></svg>
-    </div>
-    <p>Qaiser Al Hashmi. © 2024</p>
-</footer>
-
-    
-    
 </html>
-
-
